@@ -1,0 +1,86 @@
+@charset "UTF- 8";
+@font-face{ 
+     font-family:reggae;
+     src: url(fonts-reggae/REGGAE\ BASS.ttf) format(truetype);
+     font-weight: normal;
+     font-style: normal;}
+     
+     body{
+         background-color: #16a5a5;
+    }
+    a{
+        font-weight: bolder
+    }
+    h1{
+         color: #0c0c5f;
+         text-align: center;
+         font-size: 3em;
+         font-family: Arial, Helvetica, sans-serif;
+    }
+    h2{
+         color: #0b2752;
+         font-size: 2em;
+         font-family: Arial, Helvetica, sans-serif;
+    }
+    .exemplo{
+         background-color: #d7edfa;
+         text-align: justify;
+         font-family: Arial, Helvetica, sans-serif;
+         text-indent: 5px;
+    }
+    #ex-id{
+         background-color:#faebd7;
+        /*Esse id ficou sem configurações de fontes e text, para poder ser comparado com a fonte a cima usada no class*/
+    }
+    div >p{
+         display: none;
+    }
+    div:hover >p{
+         display: block;
+         color: #8b0000;
+         background-color: #00ffff;
+         text-align: justify;
+         text-align: center;
+         width: 150px;
+         font-family: 'Times New Roman', Times, serif;
+    }
+
+    div:hover{
+         color: rgb(100, 14, 14);
+        
+    }
+    div.div-1{
+         
+         background-color: #0ca080;
+         border: 1px solid black;
+         height: 200px;
+         width: 200px;
+         text-align: center;
+         margin:  0 auto;
+         
+    }
+    .div-p{
+         text-align: center;
+        
+        
+    }
+    a.ex-elementos{
+        text-decoration: none;
+        color: #0c0c5f;
+    
+    }
+ 
+    a.ex-elementos::after{
+        text-decoration: none ;
+        content: "[ Esse é o link ]";
+        font-weight: normal;
+        color: #000000;
+    }
+    a:hover.ex-elementos{
+        text-decoration: underline;
+    }
+    a:active.ex-elementos{
+        color: yellow;
+    }
+    
+   

@@ -1,0 +1,137 @@
+
+:root {
+  --cor-0: #974d17b4;
+  --cor-1: #8C1D0D;
+  --cor-2: #000000;
+  --cor-3: #ffffffcc;
+  --cor-4: #211105;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-0);
+}
+
+header {
+  background-image: linear-gradient(to left, var(--cor-4) 5% , var(--cor-0));
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 30px 0 0;
+}
+
+header > h1 {
+  margin-left: 5px;
+  padding: 0 0 0 15vh;
+  font-size: 2rem;
+  color: var(--cor-3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+header > p {
+  margin-right: 5px;
+  padding: 0 15vh 0 0;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: var(--cor-3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* estilo para tela pequena */
+@media (max-width: 667px) {
+  header > h1 {
+    margin: 5px;
+    padding: 0 0 0 5vh;
+    font-size: 1.5rem;
+  }
+
+  header > p {
+    margin: 5px;
+    padding: 0 5vh 0 0;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+}
+
+nav {
+  background-color: var(--cor-2);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav > a {
+  color: var(--cor-3);
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid var(--cor-3);
+  transition: all 0.3s ease;
+}
+
+nav > a:hover {
+  background-color: var(--cor-3);
+  color: var(--cor-2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+section {
+  width: 90%;
+  margin: 30px 0;
+  text-align: center;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--cor-3);
+}
+section h2{
+padding-bottom: 10px;
+}
+section  img{
+  padding: 4px;
+  border-radius: 24px;
+  background-color: var(--cor-4);
+  box-shadow: 1px 1px 3px var(--cor-4);
+}
+section p{
+  padding-top: 10px;
+}
+aside h2{
+  padding: 0px 0px 0px 52px;
+}
+aside ul{
+  padding: 20px;
+}
+aside ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+aside ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+aside ul li a {
+  color: var(--cor-3);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
