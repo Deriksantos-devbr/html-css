@@ -5,6 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            margin: 0 auto;
+
+
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform:translate(-50%, -50%) ;
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+
+        }
+    </style>
 </head>
 <body>
     <section id="container">
